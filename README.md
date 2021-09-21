@@ -32,7 +32,18 @@
   - Best weight for  DenseNet201: 0.4
 
 ## 4. Deploy models
+### a. Web application
 * We have deployed the model with Flask and hosted it on Heroku.
 * Link: https://aiijcdraft.herokuapp.com/
+
+### b. Docker
+1. Open your browser to https://labs.play-with-docker.com/
+2. Click Login and then select docker from the drop-down list.
+3. Connect with your Docker Hub account.
+4. Once you’re logged in, click on the ADD NEW INSTANCE option on the left side bar. If you don’t see it, make your browser a little wider. After a few seconds, a terminal window opens in your browser.![](https://i.imgur.com/3JqCAEI.png)
+
+5. In the terminal, start your freshly pushed app.
+ docker run -dp 5000:5000 vvai1710/babyshark-aiijc2021:app
+6. Click on the 5000 badge when it comes up and you should see the app with your modifications! Hooray! If the 5000 badge doesn’t show up, you can click on the “Open Port” button and type in 5000.![](https://i.imgur.com/2RR1lbz.png)
 
 
