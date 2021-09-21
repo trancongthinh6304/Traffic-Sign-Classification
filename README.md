@@ -17,9 +17,9 @@
 ## 2. Train models
 - We have trained 25 different models on our training set, then evaluate them on the test set to pick out the ones that have the lowest loss: 
 
-* Model 1: VGG19
-* Model 2: Inception ResNetV2
-* Model 3: DenseNet201
+😎 Model 1: VGG19 <br>
+🤩 Model 2: Inception ResNetV2 <br>
+😚 Model 3: DenseNet201
 
 - Hyper-parameters that we use during our training session:
 
