@@ -14,6 +14,11 @@
 ### b. Image augmentation
 * To increase the training data, we augment each image in five ways
 
+![image](https://user-images.githubusercontent.com/42512473/134203240-2c0886d8-f467-4cd2-b9cb-e14aeb4bd55a.png)
+![image](https://user-images.githubusercontent.com/42512473/134202997-a397197e-b903-4d68-b731-cbf512e94eb4.png)
+
+
+
 ## 2. Train models
 - We have trained 25 different models on our training set, then evaluate them on the test set to pick out the ones that have the lowest loss: 
    - Model 1: VGG19
@@ -21,6 +26,11 @@
    - Model 3: DenseNet201
 
 - Hyper-parameters that we use during our training session:
+
+
+![image](https://user-images.githubusercontent.com/42512473/134202665-54dadb41-5ff7-425e-ae67-063d9a584586.png)
+
+
 
 
 ## 3. Ensemble models
