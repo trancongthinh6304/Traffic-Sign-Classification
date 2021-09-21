@@ -1,0 +1,100 @@
+</html>
+
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>AIIJC</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+</head>
+
+<style>
+  body,
+  h1 {
+    font-family: "Raleway", sans-serif
+  }
+
+  body,
+  html {
+    height: 100%
+  }
+
+  body {
+    background-image: url('/static/mobile.jpg');
+    min-height: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: 100% 100%;
+    
+  }
+
+  @media only screen and (min-device-width: 400px) {
+  body {
+    background-image: url('/static/forestbridge.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: 100% 100%;
+  }
+}
+
+  /* img {
+    width: 100%;
+  } */
+
+  .main-field {
+    width: 70vw;
+    height: 60vh;
+    margin: auto;
+    margin-top: 10vh;
+  }
+
+  .formmm {
+    background-color: #3b363f;
+    height: 100%;
+    /* float: left; */
+    /* margin: 0; */
+  }
+
+  .result {
+    height: 100%;
+    
+  }
+</style>
+
+<body>
+
+  <div class="bgimg w3-display-container w3-text-white">
+    <div class="w3-display-topleft w3-padding-large w3-large w3-animate-top">
+      LHP High school for the gifted
+    </div>
+
+    <div class="main-field w3-row w3-large w3-opacity w3-hover-opacity-off w3-animate-top">
+      <div class="formmm w3-container w3-half">
+        <form method="post" action="/" enctype="multipart/form-data">
+          <h2 class="w3-center">Choose your image</h2>
+          <dl>
+            <p style="width: auto;" class="form-group">
+              <input type="file" name="file" class="form-control w3-button w3-rounder" autocomplete="off" required>
+            </p>
+          </dl>
+          <p class="w3-center form-group">
+            <input type="submit" value="Submit" class="btn w3-hover-shadow w3-rounder w3-black">
+          </p>
+        </form>
+      </div>
+      <div class="result w3-container w3-half w3-text-black w3-white">
+        {% if filename %}
+        <h3 class="w3-left-align">Result:</h3>
+        <img src="{{ url_for('display_image', filename=filename) }}" style="width:50%; height: auto;" class="w3-image">
+        <p>This is <b>{{top_scores[0]}}</b> traffic sign</p>
+        {% endif %}
+      </div>
+    </div>
+  </div>
+</body>
+</html>
