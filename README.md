@@ -43,7 +43,7 @@
 
 ## 4. Deploy models
 ### a. Web application
-* We have deployed the model with Flask and hosted it on Heroku.
+* We have deployed the model with Flask and hosted it on Heroku. Due to memory limits, we can only deploy one model(VGG19) in three.
 * Link: https://aiijcdraft.herokuapp.com/
 
 ### b. Docker
