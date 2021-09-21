@@ -13,6 +13,8 @@
 * Input size: 80x80
 ### b. Image augmentation
 * To increase the training data, we augment each image in five ways
+![image](https://user-images.githubusercontent.com/42512473/134199471-26903d6c-0ca9-40ce-9904-addd1928fddf.png)
+
 
 ## 2. Train models
 * Model 1: VGG19
