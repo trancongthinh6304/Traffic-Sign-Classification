@@ -26,10 +26,9 @@
 ## 3. Ensemble models
 - We use the GridSearch-based algorithms to find the smallest loss possible when ensembling three models.
 - Here, we let the coefficient of VGG19’s predictions, Inception Resnet V2’s predictions, and Densenet 201 predictions run from 0 to 1, the step is 0.1, and find the best fit with minimum loss.
-
-* Best weight for VGG19: 0.2
-* Best weight for Inception Resnet V2: 0.4
-* Best weight for  DenseNet201: 0.4
+  - Best weight for VGG19: 0.2
+  - Best weight for Inception Resnet V2: 0.4
+  - Best weight for  DenseNet201: 0.4
 
 ## 4. Deploy models
 * We have deployed the model with Flask and hosted it on Heroku.
